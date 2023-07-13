@@ -35,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) float playerRate;
 @property(nonatomic) int overriddenDuration;
 @property(nonatomic) AVPlayerTimeControlStatus lastAvPlayerTimeControlStatus;
+@property(readonly) NSTimeInterval preferredForwardBufferDuration;
 - (void)play;
 - (void)pause;
 - (void)setIsLooping:(bool)isLooping;
